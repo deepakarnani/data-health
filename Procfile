@@ -1,0 +1,1 @@
+web: gunicorn data-health.app:app
