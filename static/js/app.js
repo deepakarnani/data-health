@@ -153,9 +153,10 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
 
   return circlesGroup;
 }
-
+url = url = "/data";
+d3.json(url, function (err, healthData) {
 // Retrieve data from the CSV file and execute everything below
-d3.csv("/assets/data/data.csv", function(err, healthData) {
+// d3.csv("/assets/data/data.csv", function(err, healthData) {
   if (err) throw err;
 
   // parse data
